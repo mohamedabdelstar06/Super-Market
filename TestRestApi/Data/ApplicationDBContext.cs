@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using TestRestApi.Data.Models;
 
 namespace TestRestApi.Data
 {
-    public class ApplicationDBContext : DbContext
+    public class ApplicationDBContext : IdentityDbContext<AppUser>
     {
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options)
             : base(options)
@@ -16,6 +17,8 @@ namespace TestRestApi.Data
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Item> Items { get; set; }
+        public DbSet<Order> Orders{ get; set; }
+        public DbSet<Item> Order { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

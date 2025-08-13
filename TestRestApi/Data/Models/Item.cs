@@ -13,5 +13,7 @@ public class Item
 
     public int CategoryId { get; set; }
     public Category category { get; set; }
+    public ICollection<OrderItem>? OrderItems { get; set; }
+
 
 }

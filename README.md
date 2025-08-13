@@ -1,5 +1,5 @@
 
-````markdown
+
 # TestRestApi
 
 A simple REST API built with **ASP.NET Core** that provides authentication and CRUD operations for categories, items, and orders.
@@ -13,9 +13,7 @@ This API includes:
 - Orders management
 
 Swagger UI is integrated for easy API exploration.
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0a2ebff0-854a-47c2-9430-bbf2d6211ced" alt="Swagger Screenshot" width="600"/>
-</p>
+![WhatsApp Image 2025-08-13 at 03 18 46_6d3dc5bb](https://github.com/user-attachments/assets/0a2ebff0-854a-47c2-9430-bbf2d6211ced)
 
 ---
 
